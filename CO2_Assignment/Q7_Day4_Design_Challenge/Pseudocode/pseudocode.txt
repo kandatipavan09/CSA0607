@@ -1,0 +1,12 @@
+Q7 PSEUDOCODE — REDESIGN REPEATED LOOKUPS
+Diagnosis: sequential search repeatedly scans records; last/missing targets require n comparisons per request.
+Objective: after preprocessing, reduce repeated exact-ID lookups from O(n) comparisons to expected O(1).
+Build phase:
+  Create an empty hash map.
+  For each record, map record.ToolID -> record.
+Query phase:
+  For each requested Tool ID, retrieve map[ID] or NOT_FOUND.
+Validation:
+  Use the same list sizes and 100 last-position queries for both methods.
+  Compare operation counts and elapsed time; include index construction cost separately.
+Trade-offs: O(n) extra memory and update work on every issue/return; hashing has expected, not guaranteed, O(1) lookup.

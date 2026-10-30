@@ -1,0 +1,16 @@
+Q1 SORTING EXPERIMENTS
+
+Nearly sorted: input=[10, 20, 30, 25, 40, 50, 45, 60]
+Selection  sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=28 swaps=2 shifts/movements=0 time=0.00000553s
+Bubble     sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=13 swaps=2 shifts/movements=0 time=0.00000264s
+Insertion  sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=9 swaps=0 shifts/movements=2 time=0.00000239s
+
+Reverse order: input=[80, 70, 60, 50, 40, 30, 20, 10]
+Selection  sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=4 shifts/movements=0 time=0.00000275s
+Bubble     sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=28 shifts/movements=0 time=0.00000343s
+Insertion  sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=0 shifts/movements=28 time=0.00000287s
+
+Edge case (duplicates/negative): input=[3, -1, 3, 0, -1, 2, 2, 0]
+Selection  sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=28 swaps=6 shifts/movements=0 time=0.00000247s
+Bubble     sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=25 swaps=14 shifts/movements=0 time=0.00000251s
+Insertion  sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=20 swaps=0 shifts/movements=14 time=0.00000213s

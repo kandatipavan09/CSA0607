@@ -1,0 +1,6 @@
+n_records,successful_last_position_comparisons,unsuccessful_comparisons,100_last_position_queries
+10,10,10,1000
+100,100,100,10000
+1000,1000,1000,100000
+5000,5000,5000,500000
+20000,20000,20000,2000000

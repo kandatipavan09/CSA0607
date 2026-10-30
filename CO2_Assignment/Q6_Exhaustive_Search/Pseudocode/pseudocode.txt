@@ -1,0 +1,11 @@
+Q6 PSEUDOCODE — EXHAUSTIVE 0-1 KNAPSACK
+Input packages (id, weight, value) and capacity W.
+best_value = 0; best_solution = empty.
+For every bit mask from 0 to 2^n - 1:
+  Initialise total_weight=0, total_value=0, chosen=empty.
+  For each package i:
+    If bit i is set, add its weight/value and ID.
+  If total_weight ≤ W and total_value > best_value:
+    store this value, weight, and chosen package IDs.
+Return the best feasible solution.
+There are 2^n subsets; direct evaluation takes Θ(n·2^n) time and O(n) working space.

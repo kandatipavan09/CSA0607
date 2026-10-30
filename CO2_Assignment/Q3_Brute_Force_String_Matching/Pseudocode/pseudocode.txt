@@ -1,0 +1,12 @@
+Q3 PSEUDOCODE — BRUTE-FORCE STRING MATCHING
+Input text T of length n and pattern P of length m.
+If m = 0, report match at index 0.
+For shift s from 0 through n-m:
+  Set j = 0.
+  While j < m:
+    Increment character-comparison counter.
+    If T[s+j] differs from P[j], stop comparing at this shift.
+    Otherwise increment j.
+  If j = m, return s and comparison count.
+Return NOT_FOUND and comparison count.
+Worst case O((n-m+1)m), commonly stated O(nm); extra space O(1).

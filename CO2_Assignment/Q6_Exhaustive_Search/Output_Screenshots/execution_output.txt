@@ -1,0 +1,7 @@
+Q6 EXHAUSTIVE SEARCH
+Correctness instance: capacity=5, packages=(ID,weight,value) [('P1', 2, 6), ('P2', 2, 10), ('P3', 3, 12), ('P4', 1, 4)]
+best_ids=['P2', 'P3'] weight=5 value=22 candidates=16 feasible=12 time=0.00001296s
+n= 8 candidates=     256 theoretical=     256 feasible=      78 best_value=  54 time=0.000150s
+n=12 candidates=    4096 theoretical=    4096 feasible=    1205 best_value= 107 time=0.003950s
+n=16 candidates=   65536 theoretical=   65536 feasible=   15485 best_value= 136 time=0.074473s
+n=20 candidates= 1048576 theoretical= 1048576 feasible=  253260 best_value= 192 time=1.500640s

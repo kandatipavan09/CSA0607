@@ -1,0 +1,5 @@
+Q5 BRUTE-FORCE CONVEX HULL
+Boundary plus interior: unique_points=7 hull_vertices=[(0, 0), (4, 0), (4, 4), (0, 4)]
+edge_candidates=21 side_tests=63 time=0.00005585s
+Challenge: collinear points and duplicates: unique_points=7 hull_vertices=[(0, 0), (2, 0), (4, 0), (4, 3), (0, 3)]
+edge_candidates=21 side_tests=75 time=0.00002795s

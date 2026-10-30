@@ -1,0 +1,4 @@
+Q3 BRUTE-FORCE STRING MATCHING
+Quick early match: text_len=37 pattern='ALERT' result_index=0 char_comparisons=5 time=0.00000379s
+Repeated-prefix worst-style miss: text_len=31 pattern='AAAAAAAAAAC' result_index=-1 char_comparisons=231 time=0.00001333s
+Late match: text_len=44 pattern='SIGNATURE' result_index=25 char_comparisons=34 time=0.00000335s

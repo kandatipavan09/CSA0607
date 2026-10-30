@@ -1,0 +1,6 @@
+n_packages,theoretical_subsets,candidate_subsets_examined
+8,256,256
+12,4096,4096
+16,65536,65536
+20,1048576,1048576
+22,4194304,4194304

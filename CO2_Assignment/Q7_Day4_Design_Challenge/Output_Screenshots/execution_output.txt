@@ -1,0 +1,7 @@
+Q7 DAY-4 DESIGN CHALLENGE: SEQUENTIAL SEARCH -> HASH INDEX
+Prediction: after O(n) index construction, repeated lookups should average O(1) rather than O(n).
+n=  100 lookups=100 sequential_comparisons=   10000 indexed_lookups= 100 index_build=0.000008s sequential=0.000344s indexed=0.000007s
+n= 1000 lookups=100 sequential_comparisons=  100000 indexed_lookups= 100 index_build=0.000086s sequential=0.004599s indexed=0.000007s
+n= 5000 lookups=100 sequential_comparisons=  500000 indexed_lookups= 100 index_build=0.000382s sequential=0.020732s indexed=0.000009s
+n=20000 lookups=100 sequential_comparisons= 2000000 indexed_lookups= 100 index_build=0.002162s sequential=0.077371s indexed=0.000010s
+Trade-off: additional O(n) memory and index maintenance on issue/return; original search remains simple for tiny or one-off lists.

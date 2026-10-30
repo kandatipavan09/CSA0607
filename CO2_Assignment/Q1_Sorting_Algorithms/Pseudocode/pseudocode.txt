@@ -1,0 +1,10 @@
+Q1 PSEUDOCODE — SORTING COMPARISON
+For each test dataset:
+  For each algorithm in Selection Sort, Bubble Sort, Insertion Sort:
+    Copy the original dataset; initialise comparison/movement counters.
+    Start timer.
+    Selection: for each position i, scan the suffix for the minimum; swap it into i.
+    Bubble: compare adjacent items, swap out-of-order pairs; stop early if a pass makes no swaps.
+    Insertion: take each next key; shift larger earlier items right; insert key in its place.
+    Stop timer; verify output is nondecreasing; report counters and elapsed time.
+Expected complexity: Selection Θ(n²) comparisons in all cases; Bubble best Θ(n) with early exit and worst Θ(n²); Insertion best Θ(n), worst Θ(n²), with shifts proportional to inversions.

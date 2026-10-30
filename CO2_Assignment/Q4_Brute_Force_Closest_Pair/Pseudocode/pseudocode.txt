@@ -1,0 +1,10 @@
+Q4 PSEUDOCODE — CLOSEST PAIR
+Input n points in 2D; require n ≥ 2.
+best_distance_squared = infinity; best_pair = none; count = 0.
+For i = 0 to n-2:
+  For j = i+1 to n-1:       # j > i avoids duplicate/reversed pairs
+    count += 1
+    compute squared Euclidean distance (xi-xj)^2 + (yi-yj)^2
+    if smaller than best_distance_squared, update best pair and value.
+Return pair, square-root distance, and count.
+Unique candidate pairs = C(n,2) = n(n-1)/2; time Θ(n²), extra space Θ(1).

@@ -1,0 +1,9 @@
+Q2 PSEUDOCODE — SEQUENTIAL SEARCH
+Input: list of tool records and target Tool ID.
+Set comparisons = 0.
+For each record from first to last:
+  comparisons = comparisons + 1
+  If record.ToolID equals target: return its index/record and comparisons.
+Return NOT_FOUND and comparisons.
+Repeat for first, middle, last, and missing targets at several list sizes.
+Expected: best Θ(1), average Θ(n), worst Θ(n); unsuccessful search checks all n records.

@@ -1,0 +1,17 @@
+Q2 SEQUENTIAL SEARCH
+n=  10 case=first        index=    0 comparisons=    1 time=0.00000138s
+n=  10 case=middle       index=    5 comparisons=    6 time=0.00000140s
+n=  10 case=last         index=    9 comparisons=   10 time=0.00000086s
+n=  10 case=unsuccessful index=   -1 comparisons=   10 time=0.00000095s
+n= 100 case=first        index=    0 comparisons=    1 time=0.00000032s
+n= 100 case=middle       index=   50 comparisons=   51 time=0.00000223s
+n= 100 case=last         index=   99 comparisons=  100 time=0.00000380s
+n= 100 case=unsuccessful index=   -1 comparisons=  100 time=0.00000384s
+n=1000 case=first        index=    0 comparisons=    1 time=0.00000072s
+n=1000 case=middle       index=  500 comparisons=  501 time=0.00002623s
+n=1000 case=last         index=  999 comparisons= 1000 time=0.00005179s
+n=1000 case=unsuccessful index=   -1 comparisons= 1000 time=0.00004753s
+n=5000 case=first        index=    0 comparisons=    1 time=0.00000148s
+n=5000 case=middle       index= 2500 comparisons= 2501 time=0.00016724s
+n=5000 case=last         index= 4999 comparisons= 5000 time=0.00038586s
+n=5000 case=unsuccessful index=   -1 comparisons= 5000 time=0.00030507s

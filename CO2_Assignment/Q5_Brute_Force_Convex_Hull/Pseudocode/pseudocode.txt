@@ -1,0 +1,12 @@
+Q5 PSEUDOCODE — BRUTE-FORCE CONVEX HULL
+Deduplicate input points.
+For every unordered pair (A,B):
+  left = false; right = false.
+  For every point C other than A and B:
+    cross = (Bx-Ax)(Cy-Ay) - (By-Ay)(Cx-Ax).
+    If cross > 0 set left=true; if cross < 0 set right=true.
+    If both flags become true, A-B cannot be a hull supporting edge; stop checking this pair.
+  If points were not found on both sides, retain A-B as a hull edge.
+Collect endpoints of retained edges and order them around their centroid for display.
+Worst-case work O(n³) side tests; space depends on retained edges/vertices.
+Note: collinear boundary points can create multiple valid edges; output focuses on hull vertices.

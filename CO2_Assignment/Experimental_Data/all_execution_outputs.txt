@@ -1,0 +1,80 @@
+===== Q1_Sorting_Algorithms =====
+Q1 SORTING EXPERIMENTS
+
+Nearly sorted: input=[10, 20, 30, 25, 40, 50, 45, 60]
+Selection  sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=28 swaps=2 shifts/movements=0 time=0.00000553s
+Bubble     sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=13 swaps=2 shifts/movements=0 time=0.00000264s
+Insertion  sorted=[10, 20, 25, 30, 40, 45, 50, 60] comparisons=9 swaps=0 shifts/movements=2 time=0.00000239s
+
+Reverse order: input=[80, 70, 60, 50, 40, 30, 20, 10]
+Selection  sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=4 shifts/movements=0 time=0.00000275s
+Bubble     sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=28 shifts/movements=0 time=0.00000343s
+Insertion  sorted=[10, 20, 30, 40, 50, 60, 70, 80] comparisons=28 swaps=0 shifts/movements=28 time=0.00000287s
+
+Edge case (duplicates/negative): input=[3, -1, 3, 0, -1, 2, 2, 0]
+Selection  sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=28 swaps=6 shifts/movements=0 time=0.00000247s
+Bubble     sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=25 swaps=14 shifts/movements=0 time=0.00000251s
+Insertion  sorted=[-1, -1, 0, 0, 2, 2, 3, 3] comparisons=20 swaps=0 shifts/movements=14 time=0.00000213s
+
+
+===== Q2_Sequential_Search =====
+Q2 SEQUENTIAL SEARCH
+n=  10 case=first        index=    0 comparisons=    1 time=0.00000138s
+n=  10 case=middle       index=    5 comparisons=    6 time=0.00000140s
+n=  10 case=last         index=    9 comparisons=   10 time=0.00000086s
+n=  10 case=unsuccessful index=   -1 comparisons=   10 time=0.00000095s
+n= 100 case=first        index=    0 comparisons=    1 time=0.00000032s
+n= 100 case=middle       index=   50 comparisons=   51 time=0.00000223s
+n= 100 case=last         index=   99 comparisons=  100 time=0.00000380s
+n= 100 case=unsuccessful index=   -1 comparisons=  100 time=0.00000384s
+n=1000 case=first        index=    0 comparisons=    1 time=0.00000072s
+n=1000 case=middle       index=  500 comparisons=  501 time=0.00002623s
+n=1000 case=last         index=  999 comparisons= 1000 time=0.00005179s
+n=1000 case=unsuccessful index=   -1 comparisons= 1000 time=0.00004753s
+n=5000 case=first        index=    0 comparisons=    1 time=0.00000148s
+n=5000 case=middle       index= 2500 comparisons= 2501 time=0.00016724s
+n=5000 case=last         index= 4999 comparisons= 5000 time=0.00038586s
+n=5000 case=unsuccessful index=   -1 comparisons= 5000 time=0.00030507s
+
+
+===== Q3_Brute_Force_String_Matching =====
+Q3 BRUTE-FORCE STRING MATCHING
+Quick early match: text_len=37 pattern='ALERT' result_index=0 char_comparisons=5 time=0.00000379s
+Repeated-prefix worst-style miss: text_len=31 pattern='AAAAAAAAAAC' result_index=-1 char_comparisons=231 time=0.00001333s
+Late match: text_len=44 pattern='SIGNATURE' result_index=25 char_comparisons=34 time=0.00000335s
+
+
+===== Q4_Brute_Force_Closest_Pair =====
+Q4 BRUTE-FORCE CLOSEST PAIR
+n=  20 pairs=     190 expected=     190 distance_calculations=     190 min_distance=4035.385 time=0.000046s pair=((70803, 86688), (73255, 89893))
+n= 100 pairs=    4950 expected=    4950 distance_calculations=    4950 min_distance=902.949 time=0.001256s pair=((73948, 68845), (74434, 68084))
+n= 500 pairs=  124750 expected=  124750 distance_calculations=  124750 min_distance=163.768 time=0.031569s pair=((34834, 74903), (34756, 74759))
+n=1000 pairs=  499500 expected=  499500 distance_calculations=  499500 min_distance=105.005 time=0.117551s pair=((2518, 67747), (2519, 67852))
+
+
+===== Q5_Brute_Force_Convex_Hull =====
+Q5 BRUTE-FORCE CONVEX HULL
+Boundary plus interior: unique_points=7 hull_vertices=[(0, 0), (4, 0), (4, 4), (0, 4)]
+edge_candidates=21 side_tests=63 time=0.00005585s
+Challenge: collinear points and duplicates: unique_points=7 hull_vertices=[(0, 0), (2, 0), (4, 0), (4, 3), (0, 3)]
+edge_candidates=21 side_tests=75 time=0.00002795s
+
+
+===== Q6_Exhaustive_Search =====
+Q6 EXHAUSTIVE SEARCH
+Correctness instance: capacity=5, packages=(ID,weight,value) [('P1', 2, 6), ('P2', 2, 10), ('P3', 3, 12), ('P4', 1, 4)]
+best_ids=['P2', 'P3'] weight=5 value=22 candidates=16 feasible=12 time=0.00001296s
+n= 8 candidates=     256 theoretical=     256 feasible=      78 best_value=  54 time=0.000150s
+n=12 candidates=    4096 theoretical=    4096 feasible=    1205 best_value= 107 time=0.003950s
+n=16 candidates=   65536 theoretical=   65536 feasible=   15485 best_value= 136 time=0.074473s
+n=20 candidates= 1048576 theoretical= 1048576 feasible=  253260 best_value= 192 time=1.500640s
+
+
+===== Q7_Day4_Design_Challenge =====
+Q7 DAY-4 DESIGN CHALLENGE: SEQUENTIAL SEARCH -> HASH INDEX
+Prediction: after O(n) index construction, repeated lookups should average O(1) rather than O(n).
+n=  100 lookups=100 sequential_comparisons=   10000 indexed_lookups= 100 index_build=0.000008s sequential=0.000344s indexed=0.000007s
+n= 1000 lookups=100 sequential_comparisons=  100000 indexed_lookups= 100 index_build=0.000086s sequential=0.004599s indexed=0.000007s
+n= 5000 lookups=100 sequential_comparisons=  500000 indexed_lookups= 100 index_build=0.000382s sequential=0.020732s indexed=0.000009s
+n=20000 lookups=100 sequential_comparisons= 2000000 indexed_lookups= 100 index_build=0.002162s sequential=0.077371s indexed=0.000010s
+Trade-off: additional O(n) memory and index maintenance on issue/return; original search remains simple for tiny or one-off lists.
