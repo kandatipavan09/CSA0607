@@ -1,0 +1,11 @@
+PSEUDOCODE: KMP ALL-OCCURRENCES MATCHING
+Build LPS array where LPS[k] is the length of the longest proper prefix of pattern[0..k]
+that is also a suffix.
+i = 0; j = 0
+while i < length(log):
+    if log[i] == pattern[j]: i++; j++
+       if j == length(pattern): record i-j; j = LPS[j-1]  # preserves overlapping matches
+    else if j > 0: j = LPS[j-1]
+    else: i++
+return hits
+Time O(n+m), extra space O(m). Empty pattern convention: every boundary index is a match.

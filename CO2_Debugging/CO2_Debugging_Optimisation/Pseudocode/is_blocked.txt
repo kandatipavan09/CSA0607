@@ -1,0 +1,5 @@
+PSEUDOCODE: BLOCKLIST MEMBERSHIP
+For repeated queries, index = set(blocklist) once.
+Return ip IN index.
+Build cost O(B); expected average query O(1), extra space O(B).
+A one-off scan is O(B); set membership is preferable for repeated SOC queries.

@@ -1,0 +1,6 @@
+alerts: [('A2', 9), ('A4', 9), ('A3', 5), ('A1', 3), ('A5', 1)]
+blocked: [('10.0.0.9', True), ('10.0.0.5', True), ('8.8.8.8', False)]
+signature hits: [0, 8]
+closest logins: ((0, 5), 1.4142135623730951)
+
+[Python environment startup warning omitted from display]

@@ -1,0 +1,11 @@
+PSEUDOCODE: EXACT BRUTE-FORCE CLOSEST PAIR
+If fewer than 2 events, return (None, None).
+best_squared = infinity; best_pair = none
+for i = 0 to n-2:
+  for j = i+1 to n-1:
+    dx = x[i]-x[j]; dy = y[i]-y[j]
+    d2 = dx*dx + dy*dy
+    if d2 < best_squared: update best_squared and pair
+return pair, sqrt(best_squared)
+There are n(n-1)/2 unique pairs. Use squared distances to avoid square roots inside the loop.
+For n=8,000, pair count = 31,996,000; exact general-case brute force remains Θ(n²).

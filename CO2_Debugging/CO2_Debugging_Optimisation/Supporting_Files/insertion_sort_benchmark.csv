@@ -1,0 +1,4 @@
+alerts_n,nearly_sorted_comparisons,nearly_sorted_shifts,random_comparisons,random_shifts
+1000,4501,3502,208599,207601
+5000,115755,110756,5069590,5064593
+10000,510875,500876,20338344,20328346

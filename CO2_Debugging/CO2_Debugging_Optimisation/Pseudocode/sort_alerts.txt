@@ -1,0 +1,10 @@
+PSEUDOCODE: STABLE INSERTION SORT (DESCENDING SEVERITY)
+for i = 1 to length(alerts)-1:
+    key = alerts[i]
+    j = i-1
+    while j >= 0 AND alerts[j].severity < key.severity:
+        alerts[j+1] = alerts[j]
+        j = j-1
+    alerts[j+1] = key
+return alerts
+Invariant: the prefix before i is sorted descending. Strict < preserves arrival order for ties.
