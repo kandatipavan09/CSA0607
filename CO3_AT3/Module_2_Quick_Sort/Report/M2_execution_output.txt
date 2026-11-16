@@ -1,0 +1,8 @@
+KARTIQ MODULE 2 - QUICK SORT
+Sample scores: [42, 17, 63, 8, 55, 29]
+First-pivot partition trace: pivot=42, left=3, right=2, result=[17, 8, 29, 42, 63, 55]
+Improved median-of-three result: [8, 17, 29, 42, 55, 63]
+Partition records: [{'pivot': 42, 'left': 3, 'right': 2}, {'pivot': 17, 'left': 1, 'right': 1}, {'pivot': 55, 'left': 0, 'right': 1}]
+Partition comparisons: 8
+Sorted correctly: True
+Production recommendation: median-of-three or randomized pivot; use introsort depth fallback for worst-case protection.

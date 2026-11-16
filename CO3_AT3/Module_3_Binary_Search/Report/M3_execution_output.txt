@@ -1,0 +1,7 @@
+KARTIQ MODULE 3 - FIRST-OCCURRENCE BINARY SEARCH
+Consolidated orders: [(101, 'O4'), (102, 'O2'), (102, 'O5'), (103, 'O6'), (105, 'O1'), (105, 'O3')]
+timestamp=102: index=1, order=(102, 'O2'), comparisons=4
+timestamp=105: index=4, order=(105, 'O1'), comparisons=4
+timestamp=104: index=-1, order=NOT FOUND, comparisons=4
+Maximum ordinary binary-search comparisons for 10,000,000 entries: 24
+First-occurrence lower-bound search: at most 24 midpoint comparisons plus one final equality check.

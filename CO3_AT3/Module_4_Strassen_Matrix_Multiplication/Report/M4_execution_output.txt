@@ -1,0 +1,9 @@
+KARTIQ MODULE 4 - STRASSEN MATRIX MULTIPLICATION
+A = [[1, 7], [3, 5]]
+B = [[1, 3], [7, 5]]
+Conventional C = [[50, 38], [38, 34]]
+Strassen C = [[50, 38], [38, 34]]
+Verified: True
+n=1024: conventional scalar multiplications = 1,073,741,824
+n=1024: Strassen scalar multiplications = 282,475,249 (7^log2(1024))
+Hybrid recommendation: conventional multiplication below a tuned cutoff; Strassen above it.

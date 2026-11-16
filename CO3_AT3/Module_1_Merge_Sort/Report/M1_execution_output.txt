@@ -1,0 +1,5 @@
+KARTIQ MODULE 1 - STABLE MERGE SORT
+Input: [(105, 'O1'), (102, 'O2'), (105, 'O3'), (101, 'O4'), (102, 'O5'), (103, 'O6')]
+Sorted: [(101, 'O4'), (102, 'O2'), (102, 'O5'), (103, 'O6'), (105, 'O1'), (105, 'O3')]
+Stable for timestamp 102: True
+Stable for timestamp 105: True
