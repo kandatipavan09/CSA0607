@@ -1,0 +1,8 @@
+Q2 - MERGE SORT AND QUICK SORT
+Input: [29, 10, 14, 37, 13, 5, 22]
+Merge Sort: [5, 10, 13, 14, 22, 29, 37]
+Quick Sort (last-element pivot): [5, 10, 13, 14, 22, 29, 37]
+Quick Sort comparisons: 13
+Maximum recursion depth: 5
+Partition sizes (left,right): [(4, 2), (0, 3), (0, 2), (1, 0), (0, 1)]
+Sorted correctly: True

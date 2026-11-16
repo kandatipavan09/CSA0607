@@ -1,0 +1,8 @@
+Q4 - STRASSEN MATRIX MULTIPLICATION
+Matrix A: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Matrix B: [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
+Conventional result: [[30, 24, 18], [84, 69, 54], [138, 114, 90]]
+Strassen result: [[30, 24, 18], [84, 69, 54], [138, 114, 90]]
+Non-power-of-two padding used: 3x3 -> 4x4
+Results match: True
+Complexities: Conventional O(n^3); Strassen O(n^log2(7)) ~= O(n^2.807).

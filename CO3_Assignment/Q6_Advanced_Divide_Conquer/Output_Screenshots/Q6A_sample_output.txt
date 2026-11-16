@@ -1,0 +1,8 @@
+Q6A - MEDIAN OF MEDIANS
+Input: [29, 10, 14, 37, 13, 5, 22, 18, 4, 31, 6, 25, 11]
+k=6 (1-based)
+Median of Medians result: 13
+QuickSelect result: 13
+Sorted reference: 13
+Both correct: True
+Median of Medians worst-case time: O(n); QuickSelect expected O(n), worst-case O(n^2).

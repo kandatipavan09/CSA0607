@@ -1,0 +1,6 @@
+Q6B - MEET-IN-THE-MIDDLE SUBSET SUM
+Values: [3, 7, 2, 9, 4, 1, 8, 5] Target: 17
+Found: True Witness half sums: 0 17
+Left subset sums: 16 Right subset sums: 16
+Brute-force cross-check: True
+Time and memory: O(2^(n/2)) subset sums per half; memory O(2^(n/2)).

@@ -1,0 +1,3 @@
+Algorithm,Best,Average,Worst,Auxiliary space
+Merge Sort,O(n log n),O(n log n),O(n log n),O(n)
+Quick Sort with last pivot,O(n log n),O(n log n),O(n^2),O(log n) average; O(n) worst

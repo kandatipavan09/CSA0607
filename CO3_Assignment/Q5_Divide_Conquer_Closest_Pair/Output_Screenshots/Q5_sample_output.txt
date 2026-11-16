@@ -1,0 +1,6 @@
+Q5 - CLOSEST PAIR
+Points: [(2, 3), (12, 30), (40, 50), (5, 1), (12, 10), (3, 4), (8, 8), (9, 9)]
+Brute force: distance=1.4142, pair=((2, 3), (3, 4)), distance calculations=28
+Divide & conquer: distance=1.4142, pair=((2, 3), (3, 4)), distance calculations=6
+Distances match: True
+Expected complexity: brute force O(n^2); divide and conquer O(n log n) with y-sorted strip processing.
